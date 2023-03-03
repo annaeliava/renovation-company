@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import "../fonts/Arial/font.css";
+body {
+  height: 100%;
+  line-height: 1;
+  background: linear-gradient(99.89deg, #3625AF 0%, #C46BD5 98.82%);
+}
+
+/*mixin*/
+/*header*/
+.header {
+  position: sticky;
+  width: 100%;
+  left: 0;
+  top: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  max-width: 1247px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+.header__btn {
+  margin-left: 153px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 246px;
+  height: 60px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0px 22px 22px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+  background-color: #302594;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .header__btn {
+    margin-left: 30px;
+  }
+}
+
+.menu {
+  margin-top: 30px;
+  max-width: 848px;
+}
+.menu__closeBtn {
+  margin: 0 4px 0 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  line-height: 138%;
+  cursor: pointer;
+}
+.menu__img {
+  width: 24px;
+  height: 24px;
+}
+.menu__link {
+  text-decoration: none;
+  line-height: 138%;
+  color: inherit;
+}
+.menu__list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu__list-item {
+  list-style: none;
+  text-decoration: none;
+  z-index: 5;
+  color: #FFFFFF;
+}
+.menu__list-item:not(:last-child) {
+  margin-right: 39px;
+}
+.menu__subnav-list {
+  position: absolute;
+  top: 28px;
+  left: 40px;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 6px;
+  padding-left: 19px;
+  padding-bottom: 7px;
+  width: 154px;
+  height: 125px;
+  background-color: #FFFFFF;
+  border-radius: 7px;
+}
+.menu__subnav-list-item {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #5C39BA;
+}
+
+/*main*/
+.main {
+  min-height: 664px;
+  padding: 97px 10px 0 10px;
+}
+.main__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main__title, .main__subtitle {
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+}
+.main__title {
+  width: 570px;
+  height: 132px;
+  font-family: 900;
+  font-size: 3.438rem;
+  line-height: 120%;
+}
+.main__subtitle {
+  margin-top: 35px;
+  margin-bottom: 6px;
+  width: 20.75rem;
+  height: 3.5rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 28px;
+}
+.main__detail {
+  margin-bottom: 67px;
+  width: 10.814rem;
+  height: 0.313rem;
+  background-color: #BAF1FF;
+  color: #BAF1FF;
+}
+.main__info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 451px;
+  min-height: 108px;
+  padding: 0;
+}
+.main__info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__info-container:not(:last-child) {
+  margin-bottom: 35px;
+}
+.main__info-txt {
+  height: 34px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+@media (max-width: 992px) {
+  .main__container {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.aside {
+  width: 508px;
+  height: 471px;
+  padding: 30px 0 0 30px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+#truckImg {
+  margin-right: 15.85px;
+}
+
+#medalImg {
+  margin-right: 27.5px;
+}
+
+#personImg {
+  margin-right: 20.52px;
+}
+
+#info-item-1 {
+  max-width: 139px;
+}
+
+#info-item-2 {
+  max-width: 128px;
+}
+
+#info-item-3 {
+  max-width: 144px;
+}/*# sourceMappingURL=index.css.map */
