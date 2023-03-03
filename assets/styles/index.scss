@@ -69,6 +69,7 @@ body{
     max-width: 848px;
     
     &__closeBtn {
+        display: none;
         margin: 0 4px 0 0;
         padding: 0;
         width: 24px;
@@ -133,6 +134,30 @@ body{
 }
 
 /*main*/
+
+#truckImg {
+    margin-right: 15.85px;
+}
+
+#medalImg {
+    margin-right: 27.5px;
+}
+
+#personImg {
+    margin-right: 20.52px;
+}
+
+#info-item-1 {
+    max-width: 139px;
+}
+
+#info-item-2 {
+    max-width: 128px;
+}
+
+#info-item-3 {
+    max-width: 144px;
+}
 
 .main{
     position: relative;
@@ -223,6 +248,8 @@ body{
     }
 }
 
+/*form*/
+
 .aside {
     width: 508px;
     height: 471px;
@@ -231,16 +258,19 @@ body{
     background-color: $mainColor;
 
     &__title {
+        width: 268px;
+        height: 60px;
         font-family: $mainFont;
         font-weight: 600;
-        font-size: 25px;
+        font-size: 1.563rem;
         line-height: 120%;
     }
 
     &__questions {
         font-weight: 400;
-        font-size: 12px;
-        line-height: 100%;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        line-height: 108%;
     }
 
     &__title,
@@ -249,12 +279,123 @@ body{
         color: $asideColor;
     }
 
+    &__range {
+        padding: 24px 0 34px 0;
+
+        &-titles {
+            margin-bottom: 21px;
+        }
+    }
+
+    &__output-range {
+        font-family: $asideFont;
+        font-weight: 700;
+        font-size: 1.063rem;
+        line-height: 118%;
+        letter-spacing: 1px;
+    }
+
+    &__output-container {
+        margin-left: 16.688rem;
+    }
+
     &__btn {
         margin-top: 25px;
 
         @include btn(185px, 60px);
     }
 }
+
+/*input-range*/
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: $customBlue;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    height: 0.75rem;
+    width: 28rem;
+    background-image: linear-gradient($customViolet, $customViolet);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}
+
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+
+input[type="range"] {
+    &::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        box-shadow: none;
+        color: $customViolet;
+        height: 0.75rem;
+        border-radius: 0.25rem;
+    }
+
+    &::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        margin-top: -10.5px;
+        width: 2.063rem;
+        height: 2.063rem;
+        background-color: $btnColor;
+        border-radius: 6.25rem;
+    }
+}
+
+/******** Firefox ********/
+
+input[type="range"] {
+    &::-moz-range-track {
+        background: $customBlue;
+        border-radius: 0.25rem;
+        height: 0.75rem;
+    }
+
+    &::-moz-range-thumb {
+        border: none;
+        width: 2.063rem;
+        height: 2.063rem;
+        background-color: $btnColor;
+        border-radius: 6.25rem;
+    }
+
+    &::-moz-range-progress {
+        height: 0.75rem;
+        background-color: $customViolet;
+        border-radius: 0.25rem;
+    }
+}
+
+/******** Edge ********/
+
+input[type="range"] {
+    &::-ms-thumb {
+        margin-top: -10.5px;
+        width: 2.063rem;
+        height: 2.063rem;
+        background-color: $btnColor;
+        border-radius: 6.25rem;
+    }
+
+    &::-ms-track {
+        border-radius: 0.25rem;
+        border: none;
+        height: 0.75rem;
+    }
+
+    &::-ms-fill-lower {
+        background-color: $customViolet;
+        border-radius: 0.25rem;
+    }
+
+    &::-ms-fill-upper {
+        background-color: $customBlue;
+        border-radius: 0.25rem;
+    }
+}
+
+/*scroll button*/
 
 .scroll {
     display: flex;
@@ -284,29 +425,3 @@ body{
         color: $mainColor;
     }
 }
-
-#truckImg {
-    margin-right: 15.85px;
-}
-
-#medalImg {
-    margin-right: 27.5px;
-}
-
-#personImg {
-    margin-right: 20.52px;
-}
-
-#info-item-1 {
-    max-width: 139px;
-}
-
-#info-item-2 {
-    max-width: 128px;
-}
-
-#info-item-3 {
-    max-width: 144px;
-}
-
-

@@ -130,11 +130,24 @@
                 <form action="">
                     <div class="aside__title">Рассчитайте стоимость ремонта</div>
                     <div class="aside__container">
-                        <p class="aside__questions">Площадь квартиры:</p>
                         <div class="aside__range">
-                            <input type="range" name="" id="">
+                            <div class="aside__range-titles">
+                                <span class="aside__questions">Площадь квартиры:</span>
+                                <span class="aside__output-container">
+                                    <output id="rangevalue" class="aside__output-range">68</output><span class="aside__output-range">м&#178</span>
+                                </span>
+                            </div>
+                            <input 
+                                type="range" 
+                                min="0"
+                                max="136"
+                                value="68"
+                                oninput="rangevalue.value=value" 
+                                name="capacity" 
+                                id="range">
                         </div>
                         <p class="aside__questions">Тип жилья:</p>
+                        
                         <div>
                             <input type="radio" name="" id="">
                             <label for="">Вторичное жилье</label>
