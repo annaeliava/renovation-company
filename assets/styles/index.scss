@@ -38,6 +38,7 @@ body{
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
+    z-index: 50;
 
     &__container {
         display: flex;
@@ -63,6 +64,7 @@ body{
 }
 
 .menu {
+    position: relative;
     margin-top: 30px;
     max-width: 848px;
     
@@ -110,7 +112,7 @@ body{
         top: 28px;
         left: 40px;
         z-index: 6;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: space-between;
         padding-top: 6px;
@@ -133,8 +135,9 @@ body{
 /*main*/
 
 .main{
+    position: relative;
     min-height: 664px;
-    padding: 97px 10px 0 10px;
+    padding: 54px 10px 0 10px;
 
     &__container {
         display: flex;
@@ -198,6 +201,18 @@ body{
             line-height: 120%;
             color: $mainColor;
         }
+    }
+
+    &__img-container {
+        display: none;
+    }
+
+    &__img {
+        position: absolute;
+        width: 745px;
+        height: 664px;
+        top: -1;
+        right: 0;
     }
 
     @media (max-width: 992px) {
