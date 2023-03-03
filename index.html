@@ -125,36 +125,51 @@
             </div>
             <aside class="aside">
                 <form action="">
-                    <div>Рассчитайте стоимость ремонта</div>
-                    <div>
-                        <input type="range" name="" id="">
+                    <div class="aside__title">Рассчитайте стоимость ремонта</div>
+                    <div class="aside__container">
+                        <p class="aside__questions">Площадь квартиры:</p>
+                        <div class="aside__range">
+                            <input type="range" name="" id="">
+                        </div>
+                        <p class="aside__questions">Тип жилья:</p>
+                        <div>
+                            <input type="radio" name="" id="">
+                            <label for="">Вторичное жилье</label>
+                            <input type="radio" name="" id="">
+                            <label for="">Новостройка</label>
+                            <input type="radio" name="" id="">
+                            <label for="">Офис</label>
+                        </div>
+                        <p class="aside__questions">Кол-во комнат:</p>
+                        <div>
+                            <input type="radio" name="" id="">
+                            <label for="">1</label>
+                            <input type="radio" name="" id="">
+                            <label for="">2</label>
+                            <input type="radio" name="" id="">
+                            <label for="">3+</label>
+                            <input type="radio" name="" id="">
+                            <label for="">Студия</label>
+                        </div>
+                        <button
+                            class="aside__btn" 
+                            type="submit">
+                                Отправить
+                        </button>
                     </div>
-                    <p>Тип жилья:</p>
-                    <div>
-                        <input type="radio" name="" id="">
-                        <label for="">Вторичное жилье</label>
-                        <input type="radio" name="" id="">
-                        <label for="">Новостройка</label>
-                        <input type="radio" name="" id="">
-                        <label for="">Офис</label>
-                    </div>
-                    <p>Кол-во комнат:</p>
-                    <div>
-                        <input type="radio" name="" id="">
-                        <label for="">1</label>
-                        <input type="radio" name="" id="">
-                        <label for="">2</label>
-                        <input type="radio" name="" id="">
-                        <label for="">3+</label>
-                        <input type="radio" name="" id="">
-                        <label for="">Студия</label>
-                    </div>
-                    <button type="submit">Отправить</button>
                 </form>
             </aside>
+            <div class="main__img">
+                <img src="" alt="background image">
+            </div>
         </div>
         <div class="scroll">
-            <button class="scroll__btn"></button>
+            <button class="scroll__btn">
+                <img 
+                    class="scroll__img"
+                    src="assets/img/scroll.svg" 
+                    alt="scroll button">
+            </button>
             <span class="scroll__txt">scroll</span>
         </div>
     </main>

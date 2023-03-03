@@ -35,6 +35,7 @@ body {
   width: 246px;
   height: 60px;
   text-transform: uppercase;
+  line-height: 375%;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -182,9 +183,69 @@ body {
 .aside {
   width: 508px;
   height: 471px;
-  padding: 30px 0 0 30px;
+  padding: 30px 0 29px 30px;
   border-radius: 10px;
   background-color: #FFFFFF;
+}
+.aside__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 120%;
+}
+.aside__questions {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+}
+.aside__title, .aside__questions {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
+.aside__btn {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
+  height: 60px;
+  text-transform: uppercase;
+  line-height: 375%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0px 22px 22px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+  background-color: #302594;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 89px;
+  margin-bottom: 45px;
+}
+.scroll__btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.scroll__img {
+  width: 32px;
+  height: 32px;
+}
+.scroll__txt {
+  margin-top: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 107%;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 #truckImg {
