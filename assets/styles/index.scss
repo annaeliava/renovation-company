@@ -405,7 +405,15 @@ body{
     }
 
     @media (min-width: 1024px) and (max-width: 1200px) {
-        
+        &__title {
+            
+            width: 400px;
+            font-size: 3.2rem;
+        }
+
+        &__subtitle {
+            width: 400;
+        }
     }
 }
 

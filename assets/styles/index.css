@@ -336,6 +336,16 @@ body {
     margin-bottom: 80px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .main__title {
+    width: 400px;
+    font-size: 3.2rem;
+  }
+  .main__subtitle {
+    width: 400;
+  }
+}
+
 @keyframes show {
   from {
     opacity: 0;
