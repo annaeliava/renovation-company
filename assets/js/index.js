@@ -40,3 +40,5 @@ function handleInputChange(e) {
 rangeInputs.forEach(input => {
     input.addEventListener('input', handleInputChange)
 })
+
+//scroll

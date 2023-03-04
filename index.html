@@ -127,7 +127,7 @@
                 </div>
             </div>
             <aside class="aside">
-                <form action="">
+                <form name="search">
                     <div class="aside__title">Рассчитайте стоимость ремонта</div>
                     <div class="aside__container">
                         <div class="aside__range">
@@ -146,32 +146,76 @@
                                 name="capacity" 
                                 id="range">
                         </div>
-                        <p class="aside__questions">Тип жилья:</p>
-                        
-                        <div>
-                            <input type="radio" name="" id="">
-                            <label for="">Вторичное жилье</label>
-                            <input type="radio" name="" id="">
-                            <label for="">Новостройка</label>
-                            <input type="radio" name="" id="">
-                            <label for="">Офис</label>
+                        <div class="aside__house">
+                            <p class="aside__questions">Тип жилья:</p>
+                            <div class="aside__house-container">
+                                <label class="aside__house-radio" id="houseSecondary">
+                                    <input 
+                                    type="radio" name="house" id="secondaryHousing"
+                                    value="secondary housing">
+                                    Вторичное жилье
+                                </label>
+                                <label class="aside__house-radio">
+                                    <input 
+                                    type="radio" name="house" id="newBuilding"
+                                    value="new building" 
+                                    checked>
+                                    Новостройка
+                                </label>
+                                <label class="aside__house-radio">
+                                    <input 
+                                    type="radio" 
+                                    name="house" 
+                                    id="office"
+                                    value="office">
+                                    Офис
+                                </label>
+                            </div>
                         </div>
-                        <p class="aside__questions">Кол-во комнат:</p>
-                        <div>
-                            <input type="radio" name="" id="">
-                            <label for="">1</label>
-                            <input type="radio" name="" id="">
-                            <label for="">2</label>
-                            <input type="radio" name="" id="">
-                            <label for="">3+</label>
-                            <input type="radio" name="" id="">
-                            <label for="">Студия</label>
+                        <div class="aside__rooms">
+                            <p class="aside__questions">Кол-во комнат:</p>
+                            <div class="aside__rooms-container">
+                                <label class="aside__rooms-radio">
+                                    <input 
+                                    type="radio" 
+                                    name="rooms" 
+                                    id="one"
+                                    value="1">
+                                    1
+                                </label>
+                                <label class="aside__rooms-radio">
+                                    <input 
+                                    type="radio" 
+                                    name="rooms" 
+                                    id="two"
+                                    value="2">
+                                    2
+                                </label>
+                                <label class="aside__rooms-radio">
+                                    <input 
+                                    type="radio" 
+                                    name="rooms" 
+                                    id="three"
+                                    value="3">
+                                    3+
+                                </label>
+                                <label class="aside__rooms-radio">
+                                    <input 
+                                    type="radio" 
+                                    name="rooms" 
+                                    id="studio"
+                                    value="studio">
+                                    Студия
+                                </label>
+                            </div>
                         </div>
-                        <button
-                            class="aside__btn" 
-                            type="submit">
-                                Отправить
-                        </button>
+                        <div class="aside__btn-container">
+                            <button
+                                class="aside__btn" 
+                                type="submit">
+                                    Отправить
+                            </button>
+                        </div>
                     </div>
                 </form>
             </aside>
