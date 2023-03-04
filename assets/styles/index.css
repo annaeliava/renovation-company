@@ -9,7 +9,6 @@ body {
 /*mixin*/
 /*header*/
 .header {
-  position: sticky;
   width: 100%;
   left: 0;
   top: 0;
@@ -217,6 +216,9 @@ body {
   position: relative;
   min-height: 705px;
   padding: 54px 10px 0 10px;
+  background-image: url("../img/background.png");
+  background-position: 65.3vw;
+  background-repeat: no-repeat;
 }
 .main__container {
   display: flex;
@@ -279,14 +281,6 @@ body {
   line-height: 120%;
   color: #FFFFFF;
 }
-.main__img {
-  position: absolute;
-  z-index: 0;
-  top: -1;
-  right: 0;
-  margin-left: 750px;
-  border-radius: 150px 0px 0px 0px;
-}
 @media (max-width: 280px) {
   .main__title {
     margin-bottom: 100px;
@@ -326,15 +320,13 @@ body {
 @media (max-width: 992px) {
   .main {
     padding: 0 10px 0 10px;
+    background-image: none;
   }
   .main__container {
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 50px;
-  }
-  .main__img {
-    display: none;
   }
 }
 @media (min-width: 1024px) and (max-width: 1200px) {

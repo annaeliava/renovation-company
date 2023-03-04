@@ -88,3 +88,12 @@ function showMobile() {
 }
 
 toggle.addEventListener('click', showMobile);
+
+//scroll 
+let scroll = document.querySelector(".scroll__btn");
+
+function scrllDown() {
+    window.scrollBy(0, 30);
+}
+
+scroll.addEventListener('click', scrllDown)

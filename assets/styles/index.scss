@@ -30,7 +30,6 @@ body{
 /*header*/
 
 .header {
-    position:sticky;
     width: 100%;
     left: 0;
     top: 0;
@@ -260,6 +259,9 @@ body{
     position: relative;
     min-height: 705px;
     padding: 54px 10px 0 10px;
+    background-image: url('../img/background.png');
+    background-position: 65.3vw;
+    background-repeat: no-repeat;
 
     &__container {
         display: flex;
@@ -334,15 +336,6 @@ body{
         }
     }
 
-    &__img {
-        position: absolute;
-        z-index: 0;
-        top: -1;
-        right: 0;
-        margin-left: 750px;
-        border-radius: 150px 0px 0px 0px;
-    }
-
     @media (max-width: 280px) {
         &__title {
             margin-bottom: 100px;
@@ -390,16 +383,13 @@ body{
 
     @media (max-width: 992px) {
         padding: 0 10px 0 10px;
+        background-image: none;
 
         &__container {
             align-items: center;
             justify-content: center;
             flex-direction: column;
             margin-bottom: 50px;
-        }
-
-        &__img {
-            display: none;
         }
     }
 
