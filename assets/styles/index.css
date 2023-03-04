@@ -25,7 +25,7 @@ body {
   min-height: 60px;
   max-width: 1247px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 27px 0 15px 0;
   box-sizing: content-box;
 }
 .header__btn {
@@ -47,15 +47,62 @@ body {
   color: #FFFFFF;
   cursor: pointer;
 }
+.header__mobile {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.header__mobile-toggle-item {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  z-index: 1;
+}
 @media (max-width: 992px) {
   .header__btn {
-    margin-left: 30px;
+    display: none;
+  }
+  .header__btn-mobile {
+    display: block;
+    width: 33px;
+    height: 33px;
+    border: none;
+    background-color: transparent;
+  }
+  .header__btn-mobile-img {
+    width: 33px;
+    height: 33px;
+  }
+  .header__mobile-toggle {
+    display: block;
+    z-index: 7;
+  }
+  .header__menu {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .header__btn-mobile {
+    display: none;
+  }
+  .header__mobile-toggle {
+    display: none;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .header__container {
+    padding: 20px;
+  }
+  .header__btn {
+    margin-left: 50px;
   }
 }
 
 .menu {
   position: relative;
-  margin-top: 30px;
   max-width: 848px;
 }
 .menu__closeBtn {
@@ -91,7 +138,7 @@ body {
   color: #FFFFFF;
 }
 .menu__list-item:not(:last-child) {
-  margin-right: 39px;
+  margin-right: 35px;
 }
 .menu__subnav-list {
   position: absolute;
@@ -114,6 +161,43 @@ body {
   list-style: none;
   text-decoration: none;
   color: #5C39BA;
+}
+@media (min-width: 1600px) {
+  .menu__list-item:not(:last-child) {
+    margin-right: 39px;
+  }
+}
+@media (max-width: 992px) {
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 6;
+    padding: 3.125rem 0 3.125rem 4.375rem;
+    background-color: #FFFFFF;
+  }
+  .menu__list-item {
+    color: #5C39BA;
+  }
+  .menu__subnav-list {
+    position: absolute;
+    top: 5.4rem;
+    left: 6rem;
+    padding: 10px;
+    background-color: #5C39BA;
+  }
+  .menu__subnav-list-item {
+    color: #FFFFFF;
+  }
+  .menu__closeBtn {
+    display: none;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .menu__list-item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 /*main*/
@@ -214,13 +298,44 @@ body {
   top: -1;
   right: 0;
 }
+@media (max-width: 280px) {
+  .main__title {
+    margin-bottom: 70px;
+  }
+  .main__info {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 540px) {
+  .main__title {
+    font-size: 2.8rem;
+  }
+  .main__subtitle {
+    margin-bottom: 30px;
+  }
+  .main__title, .main__subtitle {
+    width: 100%;
+    text-align: center;
+  }
+  .main__detail {
+    display: none;
+  }
+  .main__info {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media (max-width: 992px) {
   .main__container {
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .main__info {
+    margin-bottom: 80px;
   }
 }
-
 @keyframes show {
   from {
     opacity: 0;
@@ -316,6 +431,34 @@ body {
   color: #FFFFFF;
   cursor: pointer;
 }
+@media (max-width: 280px) {
+  .aside__title {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+@media (max-width: 540px) {
+  .aside {
+    padding: 25px;
+    width: 80%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .aside__output-container {
+    margin-left: 70%;
+  }
+  .aside__house-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .aside__rooms-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
 
 /******** input-range ********/
 input[type=range] {
@@ -331,6 +474,11 @@ input[type=range] {
   background-image: linear-gradient(#BE69D5, #BE69D5);
   background-size: 50% 100%;
   background-repeat: no-repeat;
+}
+@media (max-width: 540px) {
+  input[type=range] {
+    width: 90%;
+  }
 }
 
 /***** Chrome, Safari, Opera, and Edge Chromium *****/
@@ -437,4 +585,9 @@ label {
   line-height: 107%;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media (max-width: 992px) {
+  .scroll {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */

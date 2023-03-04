@@ -10,9 +10,14 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
+        <div class="header__container" id="header__container">
+            <div class="header__mobile-toggle">
+                <span class="header__mobile-toggle-item" id="toggle-one"></span>
+                <span class="header__mobile-toggle-item" id="toggle-two"></span>
+                <span class="header__mobile-toggle-item" id="toggle-three"></span>
+            </div>
             <nav class="header__menu menu">
-                <ul class="menu__list">
+                <ul class="menu__list" id="menu__list">
                     <button class="menu__closeBtn">
                         <img 
                         class="menu__img"
@@ -82,6 +87,12 @@
                 </ul>
             </nav>
             <button class="header__btn">Обратный звонок</button>
+            <button class="header__btn-mobile">
+                <img
+                    class="header__btn-mobile-img" 
+                    src="assets/img/phone.svg" 
+                    alt="phone">
+            </button>
         </div>
     </header>
     <main class="main">
