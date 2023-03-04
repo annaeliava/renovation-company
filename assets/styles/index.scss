@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 body{
-    height: 100%;
+    min-height: 805px;
     line-height: 1;
     background: linear-gradient(99.89deg, $bodyBackground1 0%, $bodyBackground2 98.82%);
 }
@@ -256,21 +256,9 @@ body{
     margin-right: 20.52px;
 }
 
-#info-item-1 {
-    max-width: 139px;
-}
-
-#info-item-2 {
-    max-width: 128px;
-}
-
-#info-item-3 {
-    max-width: 144px;
-}
-
 .main{
     position: relative;
-    min-height: 664px;
+    min-height: 705px;
     padding: 54px 10px 0 10px;
 
     &__container {
@@ -302,6 +290,7 @@ body{
     }
 
     &__subtitle {
+        padding: 0;
         margin-bottom: 6px;
         width: 20.75rem;
         height: 3.5rem;
@@ -311,7 +300,8 @@ body{
     }
 
     &__detail {
-        margin-bottom: 67px;
+        padding: 0;
+        margin-bottom: 4.125rem;
         width: 10.814rem;
         height: 0.313rem;
         background-color: $customBlue;
@@ -319,11 +309,11 @@ body{
     }
 
     &__info {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 451px;
-        min-height: 108px;
+        display: grid;
+        grid-template-columns: 203.38px 184.5px;
+        grid-template-rows: 36px 38px;
+        column-gap: 67.5px;
+        row-gap: 35px;
         padding: 0;
 
         &-container {
@@ -336,29 +326,26 @@ body{
         }
 
         &-txt {
-            height: 34px;
             font-family: $mainFont;
             font-weight: 500;
+            font-size: 0.875rem;
             line-height: 120%;
             color: $mainColor;
         }
     }
 
-    &__img-container {
-        display: none;
-    }
-
     &__img {
         position: absolute;
-        width: 745px;
-        height: 664px;
+        z-index: 0;
         top: -1;
         right: 0;
+        margin-left: 750px;
+        border-radius: 150px 0px 0px 0px;
     }
 
     @media (max-width: 280px) {
         &__title {
-            margin-bottom: 70px;
+            margin-bottom: 100px;
         }
 
         &__info {
@@ -368,6 +355,7 @@ body{
 
     @media (max-width:540px) {
         &__title {
+            padding: 0 0 20px 0;
             font-size: 2.8rem;
         }
 
@@ -386,12 +374,23 @@ body{
         }
 
         &__info {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+
+            &-container {
+                display: flex;
+                justify-content: center;
+                &:not(:last-child){
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 
     @media (max-width: 992px) {
+        padding: 0 10px 0 10px;
+
         &__container {
             align-items: center;
             justify-content: center;
@@ -399,14 +398,13 @@ body{
             margin-bottom: 50px;
         }
 
-        &__info{
-            margin-bottom: 80px;
+        &__img {
+            display: none;
         }
     }
 
     @media (min-width: 1024px) and (max-width: 1200px) {
         &__title {
-            
             width: 400px;
             font-size: 3.2rem;
         }
@@ -428,9 +426,11 @@ body{
     width: 508px;
     height: 471px;
     padding: 30px 0 29px 30px;
+    margin-top: 2.688rem;
     border-radius: 10px;
     background-color: $mainColor;
     animation: 3s show linear forwards;
+    z-index: 2;
 
     &__title {
         width: 268px;
@@ -660,13 +660,17 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2.688rem;
-    margin-bottom: 4.688rem;
+    padding-top: 2.688rem;
+    padding-bottom: 2.813rem;
+    margin: 0;
 
     &__btn {
+        padding: 0;
+        margin: 0;
         border: none;
         background-color: transparent;
         cursor: pointer;
+        z-index: 2;
     } 
 
     &__img {
@@ -675,13 +679,14 @@ label {
     }
 
     &__txt {
-        margin-top: 14px;
+        margin-top: 0.875rem;
         font-family: $mainFont;
         font-weight: 400;
         font-size: 15px;
         line-height: 107%;
         text-transform: uppercase;
         color: $mainColor;
+        z-index: 2;
     }
 
     @media (max-width: 992px) {
