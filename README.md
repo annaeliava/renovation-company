@@ -1,7 +1,7 @@
 # renovation-company
 
 <img width="1511" alt="Снимок экрана 2023-06-12 в 19 26 14" src="https://github.com/annaeliava/renovation-company/assets/98190765/ad5bb311-d516-4b58-bd0d-d7c619630225">
-<img width="340" alt="Снимок экрана 2023-06-12 в 19 27 35" src="https://github.com/annaeliava/renovation-company/assets/98190765/abd7c638-65ea-4fc9-aef1-702aeb35b331">
+<img width="340" alt="Снимок экрана 2023-06-12 в 19 27 35" src="https://github.com/annaeliava/renovation-company/assets/98190765/abd7c638-65ea-4fc9-aef1-702aeb35b331"><br/>
 <img width="344" alt="Снимок экрана 2023-06-12 в 19 27 49" src="https://github.com/annaeliava/renovation-company/assets/98190765/1c356d60-2558-4022-9bce-e777a44321a3">
 
 
